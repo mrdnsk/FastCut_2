@@ -1,0 +1,26 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace "com.example.fastcut"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.fastcut"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "0.3"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.google.android.material:material:1.11.0'
+}
